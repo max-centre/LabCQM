@@ -1,2 +1,2 @@
-# LabCQM
-Teaching material for the Laboratory of Computational Quantum Mechanics (LabCQM) class
+# LabQSM
+Teaching material for the class 'Laboratory of Quantum SImulation of Materials' (LabQSM).
