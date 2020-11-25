@@ -3,7 +3,7 @@
     prefix='diamond',
     calculation = 'scf'
     restart_mode='from_scratch',
-    pseudo_dir = '/opt/QE/pseudo/'
+    pseudo_dir = './pseudo/'
     outdir = './SCRATCH'
  /
  &SYSTEM
