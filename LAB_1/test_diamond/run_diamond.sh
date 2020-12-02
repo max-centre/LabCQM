@@ -42,7 +42,7 @@ for nk     in $nk_list ; do
     prefix="diamond",
     calculation = "scf"
     restart_mode="from_scratch"
-    pseudo_dir = "../../pseudo/"
+    pseudo_dir = '/home/max/LabQSM/pseudo/'
     outdir = "./SCRATCH"
  /
  &SYSTEM
