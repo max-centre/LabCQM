@@ -8,7 +8,7 @@ import sys
 def main():
 
    #
-   bindir = "/opt/QE/qe-6.2/bin"
+   bindir = "/usr/local/bin"
 
    #
    # environment
