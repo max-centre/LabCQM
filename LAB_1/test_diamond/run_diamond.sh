@@ -5,9 +5,8 @@
 # environment
 #
 export OMP_NUM_THREADS=1
-if [ -z "QE_root" ] ; then echo "Pls set the QE_ROOT env variable" ; exit 1 ; fi
 
-bindir=$QE_ROOT/bin
+bindir="/usr/local/bin"
 para_prefix="mpirun -np 2"
 #para_postfix="-npool 2"
 
@@ -43,7 +42,7 @@ for nk     in $nk_list ; do
     prefix="diamond",
     calculation = "scf"
     restart_mode="from_scratch"
-    pseudo_dir = "../../pseudo/"
+    pseudo_dir = '/home/max/LabQSM/pseudo/'
     outdir = "./SCRATCH"
  /
  &SYSTEM

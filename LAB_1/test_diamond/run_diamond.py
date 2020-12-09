@@ -8,7 +8,7 @@ import sys
 def main():
 
    #
-   bindir = "/opt/QE/qe-6.2/bin"
+   bindir = "/usr/local/bin"
 
    #
    # environment
@@ -55,7 +55,7 @@ def main():
     prefix='diamond',
     calculation = 'scf'
     restart_mode='from_scratch',
-    pseudo_dir = '/opt/QE/pseudo/'
+    pseudo_dir = '/home/max/LabQSM/pseudo/'
     outdir = './SCRATCH'
  /
  &SYSTEM
