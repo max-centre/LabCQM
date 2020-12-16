@@ -9,6 +9,9 @@ from scipy.interpolate import UnivariateSpline, interp1d
 
 def main(argv):
 
+  #sys.path.append('/opt/QE/tools')
+  from parse_output import parse_output
+
   #
   # units
   # 1 Ha/Bohr3 = 29421.02648438959 GPa
@@ -16,19 +19,20 @@ def main(argv):
   conv_RYAU_2_GPA=14710.513242194795
 
   if (len(argv)==1):
-     print(argv[0]+ " <filein>")
+     print(argv[0]+ " <file1> <file2> ...")
      sys.exit(2)
 
-  filedat=argv[1]
+  file_list=argv[1:]
 
   #
-  # read data
+  # read and parse data
   #
-  data=np.loadtxt(filedat)
-  #print(data)
-  xl=data[:,0]
-  yl=data[:,1]
-
+  xl=[]
+  yl=[]
+  for f in file_list:
+     outd=parse_output(f)    
+     xl.append(outd["volume"])  
+     yl.append(outd["energy"])  
   #
   # reorder
   #
