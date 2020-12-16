@@ -30,12 +30,6 @@ def main(argv):
   yl=data[:,1]
 
   #
-  # reorder
-  #
-  yl.sort(key=dict(zip(yl, xl)).get)
-  xl.sort()
-
-  #
   # interpolate
   # and perform the second derivative
   #
