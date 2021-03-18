@@ -1,0 +1,17 @@
+
+ &INPUTPP
+    prefix   = 'guanine_LDA'
+    outdir   = './SCRATCH'
+    filplot  = 'rho_LDA.pp'
+    plot_num = 0
+ /
+
+ &PLOT
+    nfile    = 1
+    filepp(1)= 'rho_LDA.pp'
+    iflag    = 3
+    output_format = 5
+    fileout  = 'rho_LDA.xsf'
+ /
+
+

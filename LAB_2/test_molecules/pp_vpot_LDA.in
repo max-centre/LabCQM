@@ -1,0 +1,17 @@
+
+ &INPUTPP
+    prefix   = 'guanine_LDA'
+    outdir   = './SCRATCH'
+    filplot  = 'vpot_LDA.pp'
+    plot_num = 11
+ /
+
+ &PLOT
+    nfile    = 1
+    filepp(1)= 'vpot_LDA.pp'
+    iflag    = 3
+    output_format = 4
+    fileout  = 'vpot_LDA.txt'
+ /
+
+

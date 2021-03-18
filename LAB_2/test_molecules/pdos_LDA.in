@@ -1,0 +1,6 @@
+
+ &PROJWFC
+    prefix="guanine_LDA"
+    degauss = 0.01
+    outdir = "./SCRATCH"
+ /
